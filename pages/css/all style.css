@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::after,*::before{
+    box-sizing:border-box;
+}
+img{
+    vertical-align: middle;
+}
+
+body{
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 1.5;
+}
+.container{
+    max-width:1296px;
+    margin:0 auto;
+}
+.header{
+    background: #000;
+}
+.pt40{
+    padding-top: 40px;
+}
+.ta-r{
+    display:flex;
+    justify-content: space-around;
+}
+.ta-r>li>a{
+    color: #D1D1D1;
+    text-align: right;
+    text-decoration: none;
+}
+.ta-r>li{
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.ta-r>li>a:hover{
+    transition: all 1s;
+    color: #918a8a;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.pt72{
+    padding: 72px 0;
+}
+.mr24{
+    margin-right: 24px;
+}
+.flex-d{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: #FFF;
+    font-size: 64px;
+}
+h1{
+    color: #00FFA3;
+    text-align: right;
+    font-size: 128px;
+}
+.button{
+    border:3px solid #fff;
+    border-radius: 32px;
+    margin-left: auto;
+    padding: 12px 24px;
+    gap: 4px;
+    cursor: pointer;
+}
+.button:hover{
+    transition:all 1s;
+    background: #00FFA3;
+}
+.bg{
+    background-image:url(/assets/images/background-img.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    position: sticky;
+    width: auto;
+    height: 920px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+.p-160{
+    padding: 160px 0;
+}
+.item-L{
+    width:526px;
+}
+.white{
+    color: #fff;
+}
+.m-36{
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+.item-R{
+    margin-left: 24px;
+    width: 746px;
+}
+.jc-sb{
+    display: flex;
+    justify-content: space-between;
+}
+.w-128{
+    width: 128px;
+    height: 98px;
+}
+.w-b{
+    background:#fff;
+}
+.flex-j{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.warp-4{
+    width:636px;
+    height: 328px;
+    margin-right: 134px;
+    display: inline-flex;
+    flex-wrap:wrap;
+}
+.w-306{
+    width: 306px;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.mb24{
+    margin-bottom: 24px;
+}
+.mb8{
+    margin-bottom: 8px;
+}
+.mr12{
+    margin-right: 12px;
+}
+.ml12{
+    margin-left: 12px;
+}
+.fs24{
+    font-size: 24px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs16{
+    font-size: 16px;
+}
+.black{
+    color: #15161D;
+    margin-bottom: 4px;
+}
+.about{
+    width: 526px;
+}
+h3{
+    font-size: 64px;
+}
+.banner{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    padding:96px 0;
+}
+.trend{
+    width: 100px;
+    height: 100px;
+    margin-left: 16px;
+}
+.contact{
+    margin-right: 113px;
+}
+.image{
+    /* object-fit: cover; 讓圖維持設定好的寬高，並且圖片會自動裁切掉邊緣，防止圖片被壓縮變形 */
+    object-fit: cover;
+    width: 162px;
+    height: 162px;
+    border-radius: 40px;
+}
+.image:hover{
+    transition:all 1s;
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.community{
+    width: 526px;
+}
+.section2{
+    flex-direction: column;
+    align-items: center;
+}
+.Projects{
+    text-align: left;
+    width:746px;
+}
+.ml-auto{
+    display: flex;
+    margin-left: auto;
+}
+.button2{
+    margin-right: auto;
+    padding: 12px 24px;
+    border:3px solid #000;
+    border-radius: 32px;
+    gap: 4px;
+    cursor: pointer;
+}
+.button2:hover{
+    background: #fff;
+    color:#000;
+    transition:all 1s;
+}
+.mb76{
+    margin-bottom: 76px;
+}
+.mb-28{
+    margin-bottom: 28px;
+}
+.p-40{
+    padding: 40px 0;
+    text-align: center;
+}
